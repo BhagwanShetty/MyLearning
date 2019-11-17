@@ -1,7 +1,7 @@
 [Profile Actions]
 MercIniTreeFather=""
 MercIniTreeSectionName="Profile Actions"
-Profile Actions name=vuser_init,Action,vuser_end
+Profile Actions name=vuser_init,Action,Search2,Buy2,vuser_end
 [RunLogicEndRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicEndRoot"
@@ -53,9 +53,9 @@ RunLogicObjectKind="Action"
 [RunLogicRunRoot]
 MercIniTreeFather=""
 MercIniTreeSectionName="RunLogicRunRoot"
-MercIniTreeSons="Action"
+MercIniTreeSons="Action,Search2,Buy2"
 Name="Run"
-RunLogicActionOrder="Action"
+RunLogicActionOrder="Action,Search2,Buy2"
 RunLogicActionType="VuserRun"
 RunLogicNumOfIterations="5"
 RunLogicObjectKind="Group"
@@ -64,5 +64,17 @@ RunLogicRunMode="Sequential"
 MercIniTreeFather="RunLogicRunRoot"
 MercIniTreeSectionName="Action"
 Name="Action"
+RunLogicActionType="VuserRun"
+RunLogicObjectKind="Action"
+[RunLogicRunRoot:Buy2]
+MercIniTreeFather="RunLogicRunRoot"
+MercIniTreeSectionName="Buy2"
+Name="Buy2"
+RunLogicActionType="VuserRun"
+RunLogicObjectKind="Action"
+[RunLogicRunRoot:Search2]
+MercIniTreeFather="RunLogicRunRoot"
+MercIniTreeSectionName="Search2"
+Name="Search2"
 RunLogicActionType="VuserRun"
 RunLogicObjectKind="Action"
